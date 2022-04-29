@@ -1,0 +1,10 @@
+body {
+    background-color: brown;
+}
+
+#game {
+    width: 75%;
+    height: 50px;
+    background-color: aqua;
+    
+}
