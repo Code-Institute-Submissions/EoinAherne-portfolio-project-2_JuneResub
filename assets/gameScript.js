@@ -9,7 +9,12 @@ let scissors = document.getElementById('scissors');
 let resultDisplay = document.getElementById('result-display')
 
 //Add event listeners for buttons
-rock.addEventListener('click,'alert('rock clicked')  );   //add function
-paper.addEventListener('click,' );   //add function
-scissors.addEventListener('click,' ); //add function
+rock.addEventListener('click',generateComputerChoice);   //add function
+paper.addEventListener('click',generateComputerChoice );   //add function
+scissors.addEventListener('click',generateComputerChoice ); //add function
 
+/**Generate random number for getting computer input */ 
+function generateComputerChoice(event) {
+    let randomNumber = Math.floor(Math.random() * 3) +1 ;
+    console.log(randomNumber);
+}
