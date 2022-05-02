@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div id="scoreboard">scoreboard 
+<div id="scoreboard"><h1>Scoreboard</h1>
     <div id="board-text"> 
         User score : 
         <span id="score" class="score-user">0</span> 
@@ -18,13 +18,25 @@
     </div>
 </div>
 
-<div id="game">Game placeholder 
-    <button class="button-one" id="rock"></button>
-    <button class="button-two" id="paper"></button>
-    <button class="button-three" id="scissors"></button>
+<div id="game"><h2>Make your selection</h2> 
+    <button class="button-one" id="rock">
+        <i class="fa-solid fa-hand-fist fa-5x"></i>
+    </button>
+    <button class="button-two" id="paper">
+        <i class="fa-solid fa-hand fa-5x"></i>
+    </button>
+    <button class="button-three" id="scissors">
+        <i class="fa-solid fa-hand-scissors fa-5x"></i>
+    </button>
 </div>
 
-    <script src="/assets/gameScript.js"></script>
+<div id="result">
+    <h2 class="result-display">Paper beats Rock. You lose!</h2>
+</div>
+
+<script src="https://kit.fontawesome.com/a45e079f82.js" crossorigin="anonymous"></script>
+<script src="/assets/gameScript.js"></script>
+
 </body>
 </html>
 
