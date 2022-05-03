@@ -7,14 +7,18 @@ let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
 //Get result display message
 let resultDisplay = document.getElementById('result-display')
+// Get buttons as an array
+let buttons = document.getElementsByClassName('.btn') 
 
-//Add event listeners for buttons
-rock.addEventListener('click',generateComputerChoice);   //add function
-paper.addEventListener('click',generateComputerChoice );   //add function
-scissors.addEventListener('click',generateComputerChoice ); //add function
 
 /**Generate random number for getting computer input */ 
 function generateComputerChoice(event) {
-    let randomNumber = Math.floor(Math.random() * 3) +1 ;
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomNumber);
+}
+
+/**  create play function */
+function play(choice) {
+    let cpuchoice = generateComputerChoice();
+    console.log(choice);
 }
