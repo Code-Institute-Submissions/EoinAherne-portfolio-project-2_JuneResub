@@ -52,7 +52,11 @@ document.getElementById('user-score').innerHTML = userScore;
 document.getElementById('computer-score').innerHTML = compScore;  
     
 }
-
-function resetGame() {
+/** Resets scores to zero  */
+function resetGame(event) {
+      userScore =0;
+      compScore = 0;
+      document.getElementById('user-score').innerHTML = userScore;
+      document.getElementById('computer-score').innerHTML = compScore; 
       
     }
