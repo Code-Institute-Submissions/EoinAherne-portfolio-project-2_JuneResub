@@ -23,22 +23,22 @@ function play(choice) {
 // rock = 1, paper = 2, scissors = 3 //
     if (choice == '1' && cpuchoice == '2'){
         ++compScore;  
-        text = 'Computer chooses Paper. Computer Wins';
+        text = 'You chose Rock. Computer chooses Paper. Computer Wins';
     } else if (choice =='2' && cpuchoice == '1'){
         ++userScore;
-        text = 'Computer chooses Rock. User wins';
+        text = 'You chose Paper. Computer chooses Rock. User wins';
     } else if (choice =='3' && cpuchoice == '1'){
         ++compScore;
-        text = 'Computer chooses Rock. Computer Wins';
+        text = 'You chose Scissors. Computer chooses Rock. Computer Wins';
     } else if (choice == '1' && cpuchoice == '3'){   
         ++userScore;
-        text = 'Computer chooses Rock. User Wins';
+        text = 'You chose Rock. Computer chooses Scissors. User Wins';
     } else if (choice == '2' && cpuchoice == '3'){ 
         ++compScore;
-        text = 'Computer chooses scissors. Computer Wins';
+        text = 'You chose Paper. Computer chooses scissors. Computer Wins';
     } else if (choice == '3' && cpuchoice == '2'){
         ++userScore;
-        text = 'Computer chooses paper. User Wins';
+        text = 'You chose Scissors. Computer chooses paper. User Wins';
     } else if (choice == cpuchoice) {      
         text = 'Draw! Play again';
     } else { 
@@ -52,7 +52,7 @@ document.getElementById('user-score').innerHTML = userScore;
 document.getElementById('computer-score').innerHTML = compScore;  
     
 }
-/** Resets scores to zero  */
+/** Resets scores to zero by redefining variables and reloading DOM elements  */
 function resetGame(event) {
       userScore =0;
       compScore = 0;
