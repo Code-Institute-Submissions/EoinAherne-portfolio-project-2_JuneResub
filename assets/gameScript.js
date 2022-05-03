@@ -1,3 +1,5 @@
+
+//Open variables containing 0 to be ammended with results later 
 var userScore = 0;
 var compScore = 0;
 //Get game button choices 
@@ -24,10 +26,10 @@ function play(choice) {
     let text;
 //Testing the results with else if statements//   
     if (choice == '1' && cpuchoice == '2'){
-        compScore +1;
+        compScore +=1;
         text = 'Computer chooses Paper. Computer Wins';
     } else if (choice =='2' && cpuchoice == '1'){
-        userScore +1;
+        userScore +=1;
         text = 'Computer chooses Rock. User wins';
     } else if (choice =='3' && cpuchoice == '1'){
         compScore += 1;
@@ -43,11 +45,13 @@ function play(choice) {
         text = 'Computer chooses paper. User Wins';
     } else if (choice == cpuchoice) {      
         text = 'Draw! Play again';
+    } else { 
+        text = "Computer scores. Take your next pick";
+        compScore+=1;
     }
 
-        document.getElementById('result-display').innerHTML = text;
-        document.getElementById('user-score').innerHTML = userScore;
-        document.getElementById('computer-score').innerHTML = compScore;  
-
-        
+document.getElementById('result-display').innerHTML = text;
+document.getElementById('user-score').innerHTML = userScore;
+document.getElementById('computer-score').innerHTML = compScore;  
+    
 }
