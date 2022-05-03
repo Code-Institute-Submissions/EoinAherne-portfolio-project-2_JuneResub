@@ -1,4 +1,7 @@
-
+* {
+    border:none;
+    
+}
 body {
     background-color: brown;
 }
