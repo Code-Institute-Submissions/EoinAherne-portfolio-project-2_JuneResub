@@ -9,27 +9,31 @@
 </head>
 <body>
 
-<div id="scoreboard"><h1>Scoreboard</h1>
+<div id="scoreboard">
     <div id="score"> 
-        User score : 
+    <p class="scores">User score : 
         <span id="user-score">0</span> 
-        Computer score 
+        Computer score :
         <span id="computer-score">0</span>
+    </p>
+    </div>
+    <div>
+        <button id="reset" onclick="resetGame()">Reset Game
+        </button>
     </div>
 </div>
 
 <div id="game"><h2>Make your selection</h2> 
     <button class="btn" id="rock" onclick="play('1')">
-        <i class="fa-solid fa-hand-fist fa-5x"></i>
+        <i class="fa-solid fa-hand-fist fa-5x center"></i>
     </button>
     <button class="btn" id="paper" onclick="play('2')">
-        <i class="fa-solid fa-hand fa-5x"></i>
+        <i class="fa-solid fa-hand fa-5x center"></i>
     </button>
     <button class="btn" id="scissors" onclick="play('3')">
-        <i class="fa-solid fa-hand-scissors fa-5x"></i>
+        <i class="fa-solid fa-hand-scissors fa-5x center"></i>
     </button>
-    <button id="reset" onclick="resetGame()">Reset Game
-    </button>
+    
 
     
 </div>
