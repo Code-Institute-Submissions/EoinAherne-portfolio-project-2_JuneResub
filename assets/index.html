@@ -17,14 +17,14 @@
         <span id="computer-score">0</span>
     </p>
     </div>
-    </div>
-
 </div>
-<div id="reset-btn">
-    <button id="reset" class="button-54" onclick="resetGame()">Reset Game
-    </button>
 
-<div id="game"><h2>Make your selection</h2> 
+<div id="select-text">
+    <h2 class="blinking" >  Make your selection  </h2> 
+</div>
+
+
+<div id="game">
     <button class="btn" id="rock" onclick="play('1')">
         <i class="fa-solid fa-hand-fist fa-5x center"></i>
     </button>
@@ -35,9 +35,12 @@
         <i class="fa-solid fa-hand-scissors fa-5x center"></i>
     </button>
     
-
-    
 </div>
+
+<div id="reset-btn">
+    <button id="reset" class="button-54" onclick="resetGame()">Reset Game
+    </button>
+</div>   
 
 <div id="result">
     <h2 id="result-display">Paper beats Rock. You lose!</h2>
