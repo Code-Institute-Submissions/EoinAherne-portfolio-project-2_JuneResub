@@ -33,4 +33,6 @@ The general concencus is that they thought it was fun and worked well with no re
     - The largest function has 20 statements in it.
     - The most complex function has a cyclomatic complexity value of 14  
 ### Deployment
+I deployed my project using GitHub Pages. The site can be found live at [https://eoinaherne.github.io/portfolio-project-2/](https://eoinaherne.github.io/portfolio-project-2/)
+
 
